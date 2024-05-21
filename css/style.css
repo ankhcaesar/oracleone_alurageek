@@ -1,0 +1,232 @@
+body {
+    background-image: url(/img/estrellas.png);
+    font-family: "IBM Plex Mono";
+}
+
+.titulo {
+    background-color: #3d407a5a;
+    display: flex;
+    width: 100vw;
+    height: 5vw;
+    justify-content: center;
+    align-items: center;
+    font-family: "Press Start 2P";
+    font-weight: bold;
+    color: white;
+    font-size: 30px;
+}
+
+.main {
+    display: flex;
+    height: 80vw;
+}
+
+/*efecto fondo*/
+.bk {
+    width: 100vw;
+    opacity: 0.8;
+    background-image: linear-gradient(180deg, #1d1f38, #1d1f38, #0a095a, #7371ee, #0a095a, #1d1f38);
+}
+.bk2 {
+    height: 100%;
+    background-image: url(/img/bk02.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-attachment: local, scroll;
+
+}
+
+
+.productos__contenedor {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0 0 10PX;
+    width: 67vw;
+    height: 50vw;
+}
+
+.productos__titulo {
+    align-self: center;
+    padding: 20px 0;
+    font-family: "Press Start 2P";
+    font-size: 20px;
+    color: white;
+}
+
+
+.productos__cards {
+    box-sizing: content-box;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 15px;
+    gap: 15px;
+}
+
+.productos__cards::-webkit-scrollbar {
+    background:#00000000;
+}
+
+.productos__cards::-webkit-scrollbar-thumb{
+    background: #0a095a67;
+}
+
+
+
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: whitesmoke;
+    border-color: #d11414;
+    border-style: solid;
+    border: 4px;
+    border-radius: 15px;
+    gap: 5px;
+    box-shadow: -8px 10px 5px 0px rgba(0,0,0,0.4)
+}
+
+.card img{
+    width: 90%;
+    padding: 5px 2px;
+}
+
+
+
+
+
+/*formulario*/
+
+.formproductos_contenedor{
+    flex-direction: column;
+    position: absolute;
+    left: 69vw;
+    display: flex;
+    padding: 20PX 0;
+    width: 30vw;
+    height: 50vw;
+}
+
+
+.formproductos__titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0 80px 0;
+    font-family: "Press Start 2P";
+    font-size: 20px;
+    color: white;
+    gap: 20px;
+}
+
+.formproductos__form{
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.formproductos__input{
+    width: 20REM;
+    height: 2.5rem;
+    border-radius: 20px;
+    padding: 3px 0 0 10px;
+    font-size: 1.2rem;
+    font-weight:400;
+}
+
+.formproductos__botones{
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+    gap: 40px;
+}
+
+.formcontacto__boton__enviar{
+    height: 80px;
+	box-shadow: 3px 4px 0px 1px #3e7327;
+	background:linear-gradient(to bottom, #77b55a 5%, #72b352 100%);
+	background-color:#77b55a;
+	border-radius:42px;
+	border:4px solid #4b8f29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:17px;
+	font-weight:bold;
+	padding:10px 10px;
+	text-decoration:none;
+	text-shadow:3px 1px 0px #5b8a3c;
+}
+.formcontacto__boton__enviar:hover{
+	background:linear-gradient(to bottom, #649c48 5%, #77b55a 100%);
+	background-color:#72b352;
+}
+.formcontacto__boton__enviar:active{
+	box-shadow:inset 3px 4px 0px 1px #3e7327;
+}
+
+.formcontacto__boton__limpiar{
+    box-shadow: 3px 4px 0px 1px #8a2a21;
+	background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+	background-color:#c62d1f;
+	border-radius:48px;
+	border:4px solid #d02718;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:17px;
+	font-weight:bold;
+	padding:10px 10px;
+	text-decoration:none;
+	text-shadow:3px 1px 0px #810e05;
+}
+
+.formcontacto__boton__limpiar:hover{
+    background:linear-gradient(to bottom, #eb675e 5%, #e4685d 100%);
+	background-color:#eb675e;
+}
+
+.formcontacto__boton__limpiar:active{
+    box-shadow: inset 3px 4px 0px 1px #8a2a21;
+}
+
+
+
+.footer {   
+    background-image: linear-gradient(#13174bd1, #000000);
+    width: 100vw;
+    height: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    color: white;
+}
+.logo_alurageek{
+    display: flex;
+    align-items: center;
+}
+.logo_alurageek__img{
+    width: 5rem;
+}
+.logo_alurageek__texto {
+    font-family: "Press Start 2P";
+    font-weight: bold;
+    font-size: 15px;
+
+}
+.desarollador,
+.cliente {
+    font-weight: bold;
+    font-size: 20px;
+}
