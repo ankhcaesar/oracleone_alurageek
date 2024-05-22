@@ -27,6 +27,7 @@ body {
     opacity: 0.8;
     background-image: linear-gradient(180deg, #1d1f38, #1d1f38, #0a095a, #7371ee, #0a095a, #1d1f38);
 }
+
 .bk2 {
     height: 100%;
     background-image: url(/img/bk02.jpg);
@@ -68,17 +69,14 @@ body {
 }
 
 .productos__cards::-webkit-scrollbar {
-    background:#00000000;
+    background: #00000000;
 }
 
-.productos__cards::-webkit-scrollbar-thumb{
+.productos__cards::-webkit-scrollbar-thumb {
     background: #0a095a67;
 }
 
-
-
-
-.card{
+.card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -87,22 +85,35 @@ body {
     border-style: solid;
     border: 4px;
     border-radius: 15px;
-    gap: 5px;
-    box-shadow: -8px 10px 5px 0px rgba(0,0,0,0.4)
+    gap: 4px;
+    box-shadow: -8px 10px 5px 0px rgba(0, 0, 0, 0.4)
 }
 
-.card img{
+.card img {
+    width: 85%;
+    padding: 4px 2px;
+}
+
+.card-container--info {
     width: 90%;
-    padding: 5px 2px;
 }
 
+.card-container--value {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-container--value img {
+    width: 1.5em;
+}
 
 
 
 
 /*formulario*/
 
-.formproductos_contenedor{
+.formproductos_contenedor {
     flex-direction: column;
     position: absolute;
     left: 69vw;
@@ -125,7 +136,7 @@ body {
     gap: 20px;
 }
 
-.formproductos__form{
+.formproductos__form {
     width: 30vw;
     display: flex;
     flex-direction: column;
@@ -134,74 +145,76 @@ body {
 }
 
 
-.formproductos__input{
+.formproductos__input {
     width: 20REM;
     height: 2.5rem;
     border-radius: 20px;
     padding: 3px 0 0 10px;
     font-size: 1.2rem;
-    font-weight:400;
+    font-weight: 400;
 }
 
-.formproductos__botones{
+.formproductos__botones {
     display: flex;
     justify-content: center;
     padding: 50px 0;
     gap: 40px;
 }
 
-.formcontacto__boton__enviar{
+.formcontacto__boton__enviar {
     height: 80px;
-	box-shadow: 3px 4px 0px 1px #3e7327;
-	background:linear-gradient(to bottom, #77b55a 5%, #72b352 100%);
-	background-color:#77b55a;
-	border-radius:42px;
-	border:4px solid #4b8f29;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-size:17px;
-	font-weight:bold;
-	padding:10px 10px;
-	text-decoration:none;
-	text-shadow:3px 1px 0px #5b8a3c;
-}
-.formcontacto__boton__enviar:hover{
-	background:linear-gradient(to bottom, #649c48 5%, #77b55a 100%);
-	background-color:#72b352;
-}
-.formcontacto__boton__enviar:active{
-	box-shadow:inset 3px 4px 0px 1px #3e7327;
+    box-shadow: 3px 4px 0px 1px #3e7327;
+    background: linear-gradient(to bottom, #77b55a 5%, #72b352 100%);
+    background-color: #77b55a;
+    border-radius: 42px;
+    border: 4px solid #4b8f29;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 10px 10px;
+    text-decoration: none;
+    text-shadow: 3px 1px 0px #5b8a3c;
 }
 
-.formcontacto__boton__limpiar{
+.formcontacto__boton__enviar:hover {
+    background: linear-gradient(to bottom, #649c48 5%, #77b55a 100%);
+    background-color: #72b352;
+}
+
+.formcontacto__boton__enviar:active {
+    box-shadow: inset 3px 4px 0px 1px #3e7327;
+}
+
+.formcontacto__boton__limpiar {
     box-shadow: 3px 4px 0px 1px #8a2a21;
-	background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
-	background-color:#c62d1f;
-	border-radius:48px;
-	border:4px solid #d02718;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-size:17px;
-	font-weight:bold;
-	padding:10px 10px;
-	text-decoration:none;
-	text-shadow:3px 1px 0px #810e05;
+    background: linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+    background-color: #c62d1f;
+    border-radius: 48px;
+    border: 4px solid #d02718;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 10px 10px;
+    text-decoration: none;
+    text-shadow: 3px 1px 0px #810e05;
 }
 
-.formcontacto__boton__limpiar:hover{
-    background:linear-gradient(to bottom, #eb675e 5%, #e4685d 100%);
-	background-color:#eb675e;
+.formcontacto__boton__limpiar:hover {
+    background: linear-gradient(to bottom, #eb675e 5%, #e4685d 100%);
+    background-color: #eb675e;
 }
 
-.formcontacto__boton__limpiar:active{
+.formcontacto__boton__limpiar:active {
     box-shadow: inset 3px 4px 0px 1px #8a2a21;
 }
 
 
 
-.footer {   
+.footer {
     background-image: linear-gradient(#13174bd1, #000000);
     width: 100vw;
     height: 10vw;
@@ -212,21 +225,93 @@ body {
     gap: 15px;
     color: white;
 }
-.logo_alurageek{
+
+.logo_alurageek {
     display: flex;
     align-items: center;
 }
-.logo_alurageek__img{
+
+.logo_alurageek__img {
     width: 5rem;
 }
+
 .logo_alurageek__texto {
     font-family: "Press Start 2P";
     font-weight: bold;
     font-size: 15px;
 
 }
+
 .desarollador,
 .cliente {
     font-weight: bold;
     font-size: 20px;
+}
+
+
+/*Celular*/
+@media (max-width: 425px) {}
+
+
+
+
+/*Tablet*/
+@media (max-width: 768px) {
+
+.bk{
+
+}
+
+.bk2{
+    
+}
+
+
+
+
+
+
+
+    /*
+    .titulo {
+        height: 15vw;
+    }
+
+    .main {
+        height: auto;
+    }
+
+
+
+
+
+    .productos__contenedor {
+        left: 10%;
+        top: 700px;
+
+        width: 90vw;
+
+        height: 60vw;
+    }
+
+    .formproductos_contenedor {
+        left: 10%;
+        top: 110px;
+        width: 90vw;
+        height: auto;
+
+    }
+
+    .formproductos__formulario {
+        display: flex;
+        justify-content: center;
+        height: auto;
+    }
+
+    .footer {
+        position: absolute;
+        top: 1500px;
+        height: auto;
+    }
+    */
 }
