@@ -7,52 +7,66 @@ body {
     background-color: #3d407a5a;
     display: flex;
     width: 100vw;
-    height: 5vw;
+    height: 5vh;
     justify-content: center;
     align-items: center;
     font-family: "Press Start 2P";
     font-weight: bold;
     color: white;
-    font-size: 30px;
+    font-size: 24px;
 }
 
 .main {
+    position: relative;
     display: flex;
-    height: 80vw;
+    justify-content: space-evenly;
+    height: 76vh;
 }
 
 /*efecto fondo*/
 .bk {
+    z-index: 1;
+    position: absolute;
     width: 100vw;
+    height: 55vh;
     opacity: 0.8;
-    background-image: linear-gradient(180deg, #1d1f38, #1d1f38, #0a095a, #7371ee, #0a095a, #1d1f38);
+    background-image: linear-gradient(180deg, #1d1f38, #1d1f38, #0a095a, #0a095a, #7371ee);
 }
 
 .bk2 {
-    height: 100%;
+    position: relative;
+    top: 51vh;
+    height: 18vw;
     background-image: url(/img/bk02.jpg);
-    background-size: 100%;
+    background-size: 100vw;
     background-repeat: no-repeat;
-    background-position-y: bottom;
-    background-attachment: local, scroll;
+    /*background-position-y: bottom;*/
 
+}
+
+.supercontenedor {
+    box-sizing: content-box;
+    z-index: 2;
+    display: flex;
+    height: 100vh;
 }
 
 
 .productos__contenedor {
-    position: absolute;
+
+
     display: flex;
     flex-direction: column;
     padding: 10px 0 0 10PX;
-    width: 67vw;
-    height: 50vw;
+    width: 50vw;
+    height: 50vh;
 }
 
 .productos__titulo {
     align-self: center;
     padding: 20px 0;
     font-family: "Press Start 2P";
-    font-size: 20px;
+    font-size: 15px;
     color: white;
 }
 
@@ -78,11 +92,14 @@ body {
 
 .card {
     display: flex;
+    box-sizing: content-box;
     flex-direction: column;
     align-items: center;
     background-color: whitesmoke;
     border-color: #d11414;
     border-style: solid;
+    width: 196px;
+    height: 258px;
     border: 4px;
     border-radius: 15px;
     gap: 4px;
@@ -114,13 +131,12 @@ body {
 /*formulario*/
 
 .formproductos_contenedor {
-    flex-direction: column;
-    position: absolute;
-    left: 69vw;
     display: flex;
-    padding: 20PX 0;
+    flex-direction: column;
+    padding: 10PX 0;
     width: 30vw;
-    height: 50vw;
+
+    height: 50vh;
 }
 
 
@@ -131,12 +147,13 @@ body {
     justify-content: center;
     padding: 20px 0 80px 0;
     font-family: "Press Start 2P";
-    font-size: 20px;
+    font-size: 15px;
     color: white;
     gap: 20px;
 }
 
 .formproductos__form {
+    box-sizing: content-box;
     width: 30vw;
     display: flex;
     flex-direction: column;
@@ -146,12 +163,13 @@ body {
 
 
 .formproductos__input {
-    width: 20REM;
+    width: -webkit-fill-available;
     height: 2.5rem;
     border-radius: 20px;
     padding: 3px 0 0 10px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 400;
+    margin: 0 30px 0;
 }
 
 .formproductos__botones {
@@ -171,7 +189,7 @@ body {
     display: inline-block;
     cursor: pointer;
     color: #ffffff;
-    font-size: 17px;
+    font-size: 15px;
     font-weight: bold;
     padding: 10px 10px;
     text-decoration: none;
@@ -196,7 +214,7 @@ body {
     display: inline-block;
     cursor: pointer;
     color: #ffffff;
-    font-size: 17px;
+    font-size: 15px;
     font-weight: bold;
     padding: 10px 10px;
     text-decoration: none;
@@ -217,10 +235,10 @@ body {
 .footer {
     background-image: linear-gradient(#13174bd1, #000000);
     width: 100vw;
-    height: 10vw;
+    height: 10vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     gap: 15px;
     color: white;
@@ -249,69 +267,88 @@ body {
 }
 
 
-/*Celular*/
-@media (max-width: 425px) {}
-
-
-
-
 /*Tablet*/
 @media (max-width: 768px) {
 
-.bk{
-
-}
-
-.bk2{
-    
-}
-
-
-
-
-
-
-
-    /*
     .titulo {
-        height: 15vw;
+        font-size: 14px;
     }
 
     .main {
-        height: auto;
+        height: 61vh;
     }
-
-
-
 
 
     .productos__contenedor {
-        left: 10%;
-        top: 700px;
-
-        width: 90vw;
-
-        height: 60vw;
+        width: 60vw;
     }
+
+    .formproductos__input {
+        margin: 0 10px 0;
+    }
+
+    .formproductos__botones {
+        gap: 25px;
+    }
+
+    .formcontacto__boton__enviar,
+    .formcontacto__boton__limpiar {
+
+        transform: scale(0.9);
+    }
+}
+
+
+/*Celular*/
+@media (max-width: 425px) {
+    .titulo {
+        height: 5vh;
+    }
+
+    .main {
+        height: 85vh;
+    }
+
+    .bk {
+        height: 80vh;
+    }   
+
+    .bk2{
+        top: 80vh;
+    }
+
+    .supercontenedor {
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+    }
+
+    .productos__contenedor {
+        width: 90vw;
+        height: 45vh;
+    }
+
+
 
     .formproductos_contenedor {
-        left: 10%;
-        top: 110px;
         width: 90vw;
         height: auto;
-
     }
 
-    .formproductos__formulario {
+    .formproductos__titulo {
+        padding: 0 0 5px 0;
+    }
+
+.formproductos__formulario{
+    padding: 20px 0;
+}
+    .formproductos__form {
         display: flex;
         justify-content: center;
-        height: auto;
+        width: 70vw;
+    }
+    .formproductos__botones {
+        padding: 10px;
+        gap: 10px;
     }
 
-    .footer {
-        position: absolute;
-        top: 1500px;
-        height: auto;
-    }
-    */
 }
