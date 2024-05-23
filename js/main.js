@@ -28,6 +28,7 @@ function verificarCampo(campo) {
     tiposError.forEach(error => {
         if (campo.validity[error]) {
             mensaje = mensajes[campo.name][error]
+            
         }
     })
 
