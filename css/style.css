@@ -23,7 +23,6 @@ body {
     height: 76vh;
 }
 
-/*efecto fondo*/
 .bk {
     z-index: 1;
     position: absolute;
@@ -170,6 +169,13 @@ body {
     font-size: 1rem;
     font-weight: 400;
     margin: 0 30px 0;
+}
+
+.error {
+    font-size: 80%;
+    padding: 0;
+    color: rgb(11, 243, 100);
+    font-weight: bold;
 }
 
 .formproductos__botones {
