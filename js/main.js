@@ -18,7 +18,6 @@ campoDeFormulario.forEach((campo) => {
     campo.addEventListener("invalid", evento => evento.preventDefault())
 });
 
-
 function verificarCampo(campo) {
     let spanError = document.querySelector(`span.${campo.name}__mensajeError`);
 

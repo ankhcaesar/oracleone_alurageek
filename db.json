@@ -1,0 +1,18 @@
+{
+    "productos":[
+    {"id": "1",
+    "nombre": "Remera",
+    "precio": "1500",
+    "imagen": "https://muchosnegociosrentables.com/wp-content/uploads/2018/05/camisetas-personalizadas-para-geeks.jpg"
+    },
+    {"id": "2",
+    "nombre": "llavero",
+    "precio": "2000",
+    "imagen": "https://geekindustry.com.mx/wp-content/uploads/2024/03/KEY-DBZ-01_01-510x510.webp"
+    },
+    {"id": "3",
+    "nombre": "varita magina",
+    "precio": "35000",
+    "imagen": "https://acdn.mitiendanube.com/stores/841/670/products/varita-sauco1-19c90502e3fb4f841e16178311626636-320-0.webp"
+    }
+]}

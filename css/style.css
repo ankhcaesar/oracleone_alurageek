@@ -52,8 +52,6 @@ body {
 
 
 .productos__contenedor {
-
-
     display: flex;
     flex-direction: column;
     padding: 10px 0 0 10PX;
@@ -68,7 +66,6 @@ body {
     font-size: 15px;
     color: white;
 }
-
 
 .productos__cards {
     overflow-x: hidden;
@@ -121,6 +118,37 @@ body {
 .card-container--value img {
     width: 1.5em;
 }
+
+
+
+
+
+.productos__mensaje {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.productos__mensaje h1 {
+    width: 50%;
+    font-family: "Press Start 2P";
+    color: rgb(11, 243, 100);
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+/*
+.productos__mensaje h1{
+    font-family: "Press Start 2P";
+    color: rgb(11, 243, 100);
+    font-size: 15px;
+    font-weight: bold;
+
+    }
+ */
 
 
 
@@ -270,13 +298,15 @@ body {
 
 /*pantallas grandes*/
 @media (min-width: 1440px) {
-    .main{
+    .main {
         height: 70vh;
     }
-    .supercontenedor{
+
+    .supercontenedor {
         width: 80vw;
     }
-    .footer{
+
+    .footer {
         height: 15vh;
     }
 }
@@ -315,7 +345,7 @@ body {
         transform: scale(0.9);
     }
 
-    .footer{
+    .footer {
         height: 11vh;
     }
 }
@@ -326,7 +356,8 @@ body {
     .titulo {
         height: 3vh;
     }
-    .titulo img{
+
+    .titulo img {
         width: 5rem;
     }
 
@@ -352,7 +383,8 @@ body {
         height: 45vh;
         padding: 0;
     }
-    .productos__titulo{
+
+    .productos__titulo {
         font-size: 13px;
     }
 
@@ -379,7 +411,7 @@ body {
         width: 100vw;
     }
 
-    .formproductos__input{
+    .formproductos__input {
         height: 1.8rem;
     }
 
@@ -392,8 +424,8 @@ body {
         gap: 10px;
     }
 
-    .footer{
-        padding: 0 0 3px 0  ;
+    .footer {
+        padding: 0 0 3px 0;
         height: 10vh;
         gap: 5px;
     }
