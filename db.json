@@ -1,18 +1,40 @@
 {
-    "productos":[
-    {"id": "1",
-    "nombre": "Remera",
-    "precio": "1500",
-    "imagen": "https://muchosnegociosrentables.com/wp-content/uploads/2018/05/camisetas-personalizadas-para-geeks.jpg"
+  "productos": [
+    {
+      "id": "1",
+      "nombre": "Remera",
+      "precio": "1500",
+      "imagen": "https://muchosnegociosrentables.com/wp-content/uploads/2018/05/camisetas-personalizadas-para-geeks.jpg"
     },
-    {"id": "2",
-    "nombre": "llavero",
-    "precio": "2000",
-    "imagen": "https://geekindustry.com.mx/wp-content/uploads/2024/03/KEY-DBZ-01_01-510x510.webp"
+    {
+      "id": "2",
+      "nombre": "llavero",
+      "precio": "2000",
+      "imagen": "https://geekindustry.com.mx/wp-content/uploads/2024/03/KEY-DBZ-01_01-510x510.webp"
     },
-    {"id": "3",
-    "nombre": "varita magina",
-    "precio": "35000",
-    "imagen": "https://acdn.mitiendanube.com/stores/841/670/products/varita-sauco1-19c90502e3fb4f841e16178311626636-320-0.webp"
+    {
+      "id": "3",
+      "nombre": "varita magina",
+      "precio": "35000",
+      "imagen": "https://acdn.mitiendanube.com/stores/841/670/products/varita-sauco1-19c90502e3fb4f841e16178311626636-320-0.webp"
+    },
+    {
+      "id": "bfe7",
+      "nombre": "consola",
+      "precio": "130000",
+      "imagen": "https://www.geekno.com/wp-content/uploads/2017/02/nitendo-switch.png"
+    },
+    {
+      "id": "db2e",
+      "nombre": "muñequito",
+      "precio": "5",
+      "imagen": "https://muchosnegociosrentables.com/wp-content/uploads/2018/05/Figuras-Pop-De-Funko-para-nerds-y-geeks.jpg"
+    },
+    {
+      "id": "a2b9",
+      "nombre": "usb fachero",
+      "precio": "800",
+      "imagen": "https://muchosnegociosrentables.com/wp-content/uploads/2018/05/Memorias-USB-con-motivo-geek.jpg"
     }
-]}
+  ]
+}

@@ -13,7 +13,6 @@ async function listarProductos(){
 
     /** devuelve los datos convertidos */
     return conexionConvertida;
-    console.log(conexionConvertida);
 
 }
 
@@ -32,6 +31,7 @@ async function crearProducto(nombre,precio,imagen){
     })
     if(!conexion.ok){
         throw new Error("No fue posible enviar el video");
+
     }
     const conexionConvertida = await conexion.json();
 
