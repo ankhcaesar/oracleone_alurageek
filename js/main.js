@@ -1,3 +1,6 @@
+import { listarProductos, crearCard } from "./mostrarProductos.js";
+import { crearproductos } from "./crearProductos.js";
+import { borrarProducto } from "./borrarProducto.js";
 import { tiposError, mensajes } from "./errores.js";
 
 const campoDeFormulario = document.querySelectorAll("[required]");
@@ -27,7 +30,7 @@ function verificarCampo(campo) {
     tiposError.forEach(error => {
         if (campo.validity[error]) {
             mensaje = mensajes[campo.name][error]
-            
+
         }
     })
 
