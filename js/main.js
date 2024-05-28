@@ -6,6 +6,7 @@ import { tiposError, mensajes } from "./errores.js";
 const campoDeFormulario = document.querySelectorAll("[required]");
 const formulario = document.querySelector("[data-formumario]");
 
+
 formulario.addEventListener("submit", (e) => {
     //e.preventDefault();
     const contMensaje = {
@@ -53,4 +54,3 @@ function limpiarFormulario() {
     })
     formproductos__form.reset();
 }
-

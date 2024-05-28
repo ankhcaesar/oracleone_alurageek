@@ -88,6 +88,7 @@ body {
 .card {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     align-items: center;
     background-color: whitesmoke;
     border-color: #d11414;
@@ -119,6 +120,28 @@ body {
     width: 1.5em;
 }
 
+.boton_borrar{
+    height: 40px;
+    box-shadow: 3px 4px 0px 1px #ecd37a;
+    background: linear-gradient(to bottom, #f1eca2 5%, #f1eca2 100%);
+    background-color: #ffffff;
+    border-radius: 42px;
+    border: 4px solid #f3f2e5;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+  
+    font-weight: bold;
+    padding: 5px 5px;
+}
+
+.boton_borrar:hover{
+    background: linear-gradient(to bottom, #dbd695 5%, #f1eca2 100%);
+}
+
+.boton_borrar:active{
+box-shadow: inset 3px 4px 0px 1px #ecd37a;
+}
 
 
 
@@ -139,18 +162,6 @@ body {
     text-align: center;
 
 }
-
-/*
-.productos__mensaje h1{
-    font-family: "Press Start 2P";
-    color: rgb(11, 243, 100);
-    font-size: 15px;
-    font-weight: bold;
-
-    }
- */
-
-
 
 
 /*formulario*/

@@ -1,4 +1,5 @@
 import { conexionAPI } from "./conexionAPI.js";
+import { borrarProducto } from "./borrarProducto.js";
 
 /**trae los datos del html para interactuar*/
 const lista = document.querySelector("[data-lista]");
@@ -13,9 +14,16 @@ function crearCard(nombre, precio, imagen, id) {
         <p>${nombre}</p>
         <div class="card-container--value">
             <p>$ ${precio}</p>
-                <button class="boton_borrar" data-id><img src="./img/trashIcon.svg"></button>
+                <button type="button" class="boton_borrar" data-id><img src="./img/trashIcon.svg"></button>
         </div>
     </div>`;
+
+    const botonBorrar = producto.querySelector("[data-id]");
+    botonBorrar.addEventListener("click", () => {
+        borrarProducto(id);
+        console.log("se borro");
+    })
+
     return producto;
 }
 
