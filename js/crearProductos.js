@@ -10,7 +10,6 @@ async function crearproductos(evento) {
 
     try {
         await conexionAPI.crearProducto(nombre, precio, imagen);
-        alert("se pudo hacer la carga")
     } catch (e) {
         alert(e);
     }
